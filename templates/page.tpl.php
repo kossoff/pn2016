@@ -27,6 +27,9 @@
             +7&nbsp;(921)&nbsp;403-11-97
           </a>
         </div>
+        <div class="mobile-menu right hide-for-large-up">
+          <a href="#" data-reveal-id="mobile-menu"><i class="fa fa-bars"></i></a>
+        </div>
       </section>
 
     </header>
@@ -202,3 +205,17 @@
   </div>
 </footer>
 <!--/.l-footer -->
+
+
+<div id="mobile-menu" class="reveal-modal" data-reveal role="dialog">
+  <div class="lead"><i class="fa fa-camera-retro"></i>&nbsp;Павел Немзоров</div>
+  <hr />
+  <?php
+  print theme('links__system_main_menu',
+    array(
+      'links' => $main_menu,
+      'attributes' => array(
+        'class' => array('no-bullet'))));
+  ?>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
